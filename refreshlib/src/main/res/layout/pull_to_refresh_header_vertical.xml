@@ -26,16 +26,21 @@
                 android:layout_gravity="center" />
 
             <com.empty.refreshlib.library.ProgressWheel
-
                 android:id="@+id/pull_to_refresh_progress"
                 style="@android:style/Widget.ProgressBar.Small"
                 android:layout_width="18dip"
                 android:layout_height="18dip"
                 android:layout_gravity="center_vertical"
                 android:visibility="gone"
-                wheel:matProg_barColor="#ff0000"
+                wheel:matProg_barColor="@color/theme_color"
                 wheel:matProg_barWidth="2dip"
                 wheel:matProg_progressIndeterminate="true" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </FrameLayout>
 
         <LinearLayout

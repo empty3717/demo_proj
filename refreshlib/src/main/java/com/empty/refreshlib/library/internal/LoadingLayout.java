@@ -76,6 +76,13 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 				mHeaderProgress = (ProgressWheel) mInnerLayout.findViewById(R.id.pull_to_refresh_progress);
 				mSubHeaderText = (TextView) mInnerLayout.findViewById(R.id.pull_to_refresh_sub_text);
 				//mHeaderImage = (ImageView) mInnerLayout.findViewById(R.id.pull_to_refresh_image);
+
+//				ImageView iv = ( ImageView ) mInnerLayout.findViewById( R.id.iv_camera );
+//				iv.setImageResource( R.drawable.run_camera );
+//				AnimationDrawable animationDrawable = (AnimationDrawable) iv.getDrawable();
+//				animationDrawable.start();
+
+
 				lp1.gravity = scrollDirection == PullToRefreshBase.Orientation.VERTICAL ? Gravity.TOP : Gravity.LEFT;
 
 				mPullLabel = "上拉加载";
@@ -93,10 +100,15 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 				mSubHeaderText = (TextView) mInnerLayout.findViewById(R.id.pull_to_refresh_sub_text);
 				mHeaderImage = (ImageView) mInnerLayout.findViewById(R.id.pull_to_refresh_image);
 
+//				ImageView iv = ( ImageView ) mInnerLayout.findViewById( R.id.iv_camera );
+//				iv.setImageResource( R.drawable.run_camera );
+//				AnimationDrawable animationDrawable = (AnimationDrawable) iv.getDrawable();
+//				animationDrawable.start();
+
 				lp2.gravity = scrollDirection == PullToRefreshBase.Orientation.VERTICAL ? Gravity.BOTTOM : Gravity.RIGHT;
 
 				mPullLabel = "下拉刷新";
-				mRefreshingLabel = "正在刷新dddddddd...";
+				mRefreshingLabel = "正在刷新...";
 				mReleaseLabel = "释放可以刷新";
 				break;
 		}
